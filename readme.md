@@ -25,5 +25,7 @@ To modify the database connection string, follow these steps:
 1. Ensure you have the .NET 8 SDK installed.
 2. Ensure your database is running and accessible.
 3. Open the solution in Visual Studio 2022.
-4. Build the solution to restore all dependencies.
-5. Run the project using Visual Studio or the .NET CLI.
+4. Set CargoPay.API as Startup project.
+5. It's better the local execution in IIS Express, in Docker work, to, but the ports could be block by firewall.
+6. Build the solution to restore all dependencies.
+7. Run the project using Visual Studio or the .NET CLI.

@@ -54,7 +54,7 @@ builder.Services.AddAuthorization();
 //SERVICES
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped<IFeeHistoryRepository, FeeHistoryRepository>();
-builder.Services.AddSingleton<UFEService>();
+builder.Services.AddSingleton<IUFEService, UFEService>();
 builder.Services.AddScoped<ICardRepository, CardRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>(); 
 builder.Services.AddScoped<ICardService, CardService>();
